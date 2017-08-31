@@ -1,3 +1,5 @@
+## https://linux.cn/article-5926-1.html  #服务的详细说明
+ 
 ## cd /lib/systemd/system/
 
 ## vim redis.service
