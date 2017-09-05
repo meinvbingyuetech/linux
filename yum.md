@@ -1,0 +1,2 @@
+- 查看是否已经安装
+    - yum list installed | grep mysql
