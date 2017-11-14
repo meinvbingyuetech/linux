@@ -22,4 +22,4 @@ doskey /macrofile=C:\alias\alias.txt
 
 ## 加入注册表
 - 使用[注册表编辑器](http://pan.baidu.com/s/1kV3lpsV)打开 **HKEY_CURRENT_USER\Software\Microsoft\Command Processor**
-- 添加键值对 “Autorun”=”C:\\alias\\autorun.bat”
+- 添加键值对(字符串值) “Autorun”=”C:\\alias\\autorun.bat”
