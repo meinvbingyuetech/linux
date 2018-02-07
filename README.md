@@ -1,1 +1,2 @@
-# linux
+-  查看文件大小
+      * du -sh lumen.log
