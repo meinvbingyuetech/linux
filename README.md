@@ -1,2 +1,2 @@
 - 看文件大小
-         * du -sh lumen.log
+                * du -sh lumen.log
