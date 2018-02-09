@@ -1,5 +1,15 @@
 - 配置文件
 ```
+主配置文件
+/etc/supervisord.conf
+ 
+子配置文件目录
+/etc/supervisord.d
+```
+
+- 配置文件示例
+     * test.conf
+```
 [program:store-assistant-rank-mysql-task]
 command=php artisan task:store-assistant-rank-mysql
 process_name=%(program_name)s_%(process_num)d
