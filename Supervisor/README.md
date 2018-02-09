@@ -4,7 +4,7 @@
 /etc/supervisord.conf
  
 子配置文件目录
-/etc/supervisord.d
+/etc/supervisord.d/
 ```
 
 - 配置文件示例
