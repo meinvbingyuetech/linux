@@ -47,7 +47,7 @@ supervisorctl
 ```
 
 - 配置文件示例
-     * test.conf
+     * test.ini
 ```
 [program:test]
 command=php artisan task:store-assistant-rank-mysql
