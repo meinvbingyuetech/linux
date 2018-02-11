@@ -1,5 +1,10 @@
 ### 如果修改了 /etc/supervisord.conf ,需要执行 supervisorctl reload 来重新加载配置文件，否则不会生效。。。
 
+- 安装
+```
+yum install supervisor
+```
+
 - 开机启动
 ```
 # 编辑启动文件
