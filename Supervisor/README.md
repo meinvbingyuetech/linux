@@ -1,8 +1,36 @@
 ### 如果修改了 /etc/supervisord.conf ,需要执行 supervisorctl reload 来重新加载配置文件，否则不会生效。。。
 
-supervisord -c /etc/supervisord.conf  //启动supervisor
+- 开机启动
+```
+# 编辑启动文件
+vi /etc/rc.local
+# 在新行添加要执行的命令
+supervisord -c /home/supervisord/supervisord.conf
+```
 
-supervisorctl //打开命令行
+```
+// 启动
+supervisord -c /etc/supervisord.conf  
+
+// 杀死进程
+ps -aux | grep super
+kill -9 PID
+
+// 客户端
+supervisorctl
+    help
+    status
+    
+    reload
+    
+    stop ***
+    start ***
+    restart ***
+    
+    stop all
+    start all
+    restart all
+```
 
 - 配置文件
 ```
@@ -16,7 +44,7 @@ supervisorctl //打开命令行
 - 配置文件示例
      * test.conf
 ```
-[program:store-assistant-rank-mysql-task]
+[program:test]
 command=php artisan task:store-assistant-rank-mysql
 process_name=%(program_name)s_%(process_num)d
 numprocs=2
