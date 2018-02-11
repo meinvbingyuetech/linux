@@ -1,3 +1,9 @@
+### 如果修改了 /etc/supervisord.conf ,需要执行 supervisorctl reload 来重新加载配置文件，否则不会生效。。。
+
+supervisord -c /etc/supervisord.conf  //启动supervisor
+
+supervisorctl //打开命令行
+
 - 配置文件
 ```
 主配置文件
