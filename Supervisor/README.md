@@ -35,6 +35,8 @@ supervisorctl
     stop all
     start all
     restart all
+    
+    start test:test_0   ## 启动多个进程中的某个进程
 ```
 
 - 配置文件
