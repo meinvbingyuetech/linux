@@ -1,4 +1,12 @@
 ```
+快速到达历史任务
+
+history
+
+!1888  (!任务ID)
+```
+
+```
 使用 文件内容
 mysql -uroot -p'cat /dara/passwd.txt'
 ```
