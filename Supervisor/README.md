@@ -42,6 +42,8 @@ supervisorctl
     restart all
     
     start test:test_0   ## 启动多个进程中的某个进程
+    
+    restart test:*   ## 修改了代码，要重启，*代表重启所有进程
 ```
 
 - 配置文件
