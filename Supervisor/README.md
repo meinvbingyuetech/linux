@@ -12,6 +12,11 @@ vi /etc/rc.local
 # 在新行添加要执行的命令
 supervisord -c /home/supervisord/supervisord.conf
 ```
+ 
+```
+如果 ini 文件里增加了节点 
+则更新 supervisorctl update
+```
 
 ```
 // 启动
