@@ -16,10 +16,9 @@
 
 ----
 
-- 每分钟运行一次
+## 每分钟运行一次
+- 编辑定时任务 crontab -e
 ```
-crontab -e
-
 * * * * * /usr/bin/php /home/1.php > /dev/null 2>&1
 ```
 
@@ -27,13 +26,13 @@ crontab -e
 file_put_contents(dirname(__FILE__).'/1.txt', time().PHP_EOL, FILE_APPEND);
 ```
 
-- 每1秒运行一次
-  * 编辑定时任务 crontab -e
+## 每1秒运行一次
+- 编辑定时任务 crontab -e
 ```
 * * * * * sh /home/1.sh  > /dev/null 2>&1
 ```
 
- * 1.sh
+- 1.sh
 ```shell
 #!/bin/bash
 
@@ -47,7 +46,7 @@ done
 exit 0
 ```
 
-  * 1.php
+- 1.php
 ```php
 file_put_contents(dirname(__FILE__).'/1.txt', time().PHP_EOL, FILE_APPEND);
 ```
