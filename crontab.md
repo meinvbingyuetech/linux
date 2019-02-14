@@ -13,3 +13,13 @@
 */1 * * * * /usr/bin/php7 /web/1356789.com/yan.teach.control.test.gp122.com/artisan schedule:run
 
 ```
+- demo
+```
+crontab -e
+
+* * * * * /usr/bin/php /home/1.php > /dev/null 2>&1
+```
+
+```php
+file_put_contents(dirname(__FILE__).'/1.txt', time().PHP_EOL, FILE_APPEND);
+```
