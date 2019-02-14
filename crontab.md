@@ -22,6 +22,7 @@
 * * * * * /usr/bin/php /home/1.php > /dev/null 2>&1
 ```
 
+- 1.php
 ```php
 file_put_contents(dirname(__FILE__).'/1.txt', time().PHP_EOL, FILE_APPEND);
 ```
