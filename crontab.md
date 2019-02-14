@@ -13,13 +13,41 @@
 */1 * * * * /usr/bin/php7 /web/1356789.com/yan.teach.control.test.gp122.com/artisan schedule:run
 
 ```
-- demo
+
+----
+
+- 每分钟运行一次
 ```
 crontab -e
 
 * * * * * /usr/bin/php /home/1.php > /dev/null 2>&1
 ```
 
+```php
+file_put_contents(dirname(__FILE__).'/1.txt', time().PHP_EOL, FILE_APPEND);
+```
+
+- 每1秒运行一次
+  * 编辑定时任务 crontab -e
+```
+* * * * * sh /home/1.sh  > /dev/null 2>&1
+```
+
+ * 1.sh
+```shell
+#!/bin/bash
+
+step=1 #间隔的秒数，不能大于60
+
+for (( i = 0; i < 60; i=(i+step) )); do
+    $(/usr/bin/php '/home/1.php')
+    sleep $step
+done
+
+exit 0
+```
+
+  * 1.php
 ```php
 file_put_contents(dirname(__FILE__).'/1.txt', time().PHP_EOL, FILE_APPEND);
 ```
