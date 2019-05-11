@@ -5,6 +5,12 @@
 yum install supervisor
 ```
 
+- 开启应用
+```
+systemctl start supervisord
+systemctl status supervisord
+```
+
 - 开机启动
 ```
 # 编辑启动文件
