@@ -1,4 +1,8 @@
 ```
+find /usr -name phpize
+```
+
+```
 在当前目录下，查找含有某字符串的文件
 cd /test_dir
 grep -ir "要查找的字符串" ./
@@ -7,6 +11,19 @@ grep -ir "要查找的字符串" ./
 ```
 ls -ltr
 查看最新文件
+```
+
+```
+netstat -tunpl | grep 5672	#查看端口是否启动
+netstat -an | grep 123
+
+ps -ef | grep rabbitmq-server	#查看服务是否启动
+pstree -p | grep mongod
+
+
+rpm -qa | grep mysql
+yum list installed | grep mysql
+yum -y remove mysql-libs.x86_64 #如果已安装则删除 MySQL 及其依赖的包
 ```
 
 ```
