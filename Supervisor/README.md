@@ -62,21 +62,23 @@ supervisorctl
 /etc/supervisord.d/
 ```
 
-- 配置文件示例
+- 配置文件示例  
      * test.ini
+     * 注意日志那里，如果没有该目录，则先创建，不然启动服务会失败
+     * user 按实际来填写吧
 ```
 [program:test]
-command=php artisan task:store-assistant-rank-mysql
+command=php artisan schedule:run
 process_name=%(program_name)s_%(process_num)d
-numprocs=2
-directory=/vagrant/www/stock-assistant-storage-task/www/assistant.task.sscf.com 
+numprocs=1
+directory=/home/wwwroot/private_speech/www 
 
 umask=0755
 autorestart=true
 autostart=false
 startsecs=1
 startretries=100
-user=www-data
-stdout_logfile=/etc/supervisor/logs/%(program_name)s.log
-stderr_logfile=/etc/supervisor/logs/%(program_name)s-err.log
+user=root
+stdout_logfile=/home/supervisor/logs/%(program_name)s.log                   
+stderr_logfile=/home/supervisor/logs/%(program_name)s-err.log
 ```
