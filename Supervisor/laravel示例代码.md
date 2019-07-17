@@ -1,4 +1,5 @@
 - app\Console\Kernel.php
+    - 命令核心
 ```php
 namespace App\Console;
 
@@ -32,6 +33,7 @@ class Kernel extends ConsoleKernel
 ----
 
 - app\Console\Commands\WechatVoice.php
+    - 具体的命令代码
 ```php
 <?php
 
