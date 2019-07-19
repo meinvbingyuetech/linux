@@ -66,10 +66,10 @@ supervisorctl
      * test.ini
      * 注意日志那里，如果没有该目录，则先创建，不然启动服务会失败
      * user 按实际来填写吧
-     * 这个是执行定时任务，如果启动不起来，有可能是程序过快退出，要死循环
+     * 如果启动不起来，有可能是程序过快退出，要死循环
 ```
 [program:test]
-command=php artisan schedule:run
+command=php artisan test
 process_name=%(program_name)s_%(process_num)d
 numprocs=1
 directory=/home/wwwroot/private_speech/www
