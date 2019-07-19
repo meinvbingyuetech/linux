@@ -74,7 +74,6 @@ process_name=%(program_name)s_%(process_num)d
 numprocs=1
 directory=/home/wwwroot/private_speech/www
 
-umask=0755
 autorestart=true
 autostart=false
 startsecs=1
