@@ -69,7 +69,7 @@ supervisorctl
      * 如果启动不起来，有可能是程序过快退出，要死循环
 ```
 [program:test]
-command=php artisan test
+command=php artisan command:wechat-voice
 process_name=%(program_name)s_%(process_num)d
 numprocs=1
 directory=/home/wwwroot/private_speech/www
