@@ -1,3 +1,15 @@
+```
+
+/sbin/service crond start //启动服务
+
+/sbin/service crond stop //关闭服务
+
+/sbin/service crond restart //重启服务
+
+/sbin/service crond reload //重新载入配置
+```
+----
+
 - 编辑定时任务
   * crontab -e
 
