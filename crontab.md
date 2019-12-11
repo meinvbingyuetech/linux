@@ -63,3 +63,22 @@ exit 0
 ```php
 file_put_contents(dirname(__FILE__).'/1.txt', time().PHP_EOL, FILE_APPEND);
 ```
+
+---- 
+
+- del.sh
+```shell
+#! /bin/bash
+
+step=1 #间隔的秒数，不能大于60
+
+for (( i = 0; i < 60; i=(i+step) )); do
+    $(pkill -f SzdXM)
+    $(unlink /tmp/SzdXM)
+    $(unlink /tmp/Donald)
+    $(unlink /usr/bin/uygzfa8)
+    sleep $step
+done
+
+exit 0
+```
