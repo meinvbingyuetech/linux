@@ -82,3 +82,7 @@ done
 
 exit 0
 ```
+- 注意这里
+```
+vim /var/spool/cron/crontabs/root
+```
