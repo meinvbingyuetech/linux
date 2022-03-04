@@ -1,4 +1,6 @@
 ```
+pkill -f wordpress
+
 find /usr -name phpize
 ```
 
